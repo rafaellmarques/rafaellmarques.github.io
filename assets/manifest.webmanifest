@@ -10,7 +10,7 @@
 	"icons": [
 		{
 			"src": "images/favicon.ico",
-			"sizes": "64x64 56x56 48x48 40x40 32x32 24x24 16x16",
+			"sizes": "64x64",
 			"type": "image/ico"
 		},
 		{
