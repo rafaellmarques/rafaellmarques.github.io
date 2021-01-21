@@ -1,0 +1,31 @@
+button,
+[type='button'],
+[type='image'],
+[type='reset'],
+[type='submit'] {
+	align-items: center;
+	background-color: #e0e1e2;
+	border: 1px solid #e0e1e2;
+	border-radius: 0.3rem;
+	color: rgba(#000000, 0.6);
+	display: inline-flex;
+	font-size: pxtorem(16px);
+	font-weight: 500;
+	justify-content: center;
+	min-height: 40px;
+	min-width: 100px;
+	padding: 0.5rem 1rem;
+	position: relative;
+	transition: all 0.25s ease-in-out;
+
+	&.btn-outline {
+		background-color: transparent;
+	}
+
+	&:focus,
+	&:hover {
+		background-color: #cacbcd;
+		border: 1px solid #cacbcd;
+		color: rgba(#000000, 0.8);
+	}
+}

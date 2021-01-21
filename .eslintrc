@@ -1,0 +1,96 @@
+{
+	"env": {
+		"amd": true,
+		"browser": true,
+		"commonjs": true,
+		"es6": true,
+		"es2020": true,
+		"jquery": true,
+		"node": true
+	},
+	"extends": ["eslint:recommended", "plugin:react/recommended", "google"],
+	"globals": {
+		"$": true,
+		"_": true,
+		"dataLayer": true,
+		"vtexjs": true,
+		"vtxctx": true
+	},
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true,
+			"modules": true
+		},
+		"ecmaVersion": 6,
+		"sourceType": "module"
+	},
+	"plugins": ["react", "@typescript-eslint"],
+	"require-jsdoc": [
+		"warn",
+		{
+			"require": {
+				"FunctionDeclaration": true,
+				"MethodDefinition": true,
+				"ClassDeclaration": true,
+				"ArrowFunctionExpression": true,
+				"FunctionExpression": true
+			}
+		}
+	],
+	"rules": {
+		"block-spacing": "warn",
+		"camelcase": [
+			"warn",
+			{
+				"properties": "never",
+				"ignoreDestructuring": false
+			}
+		],
+		"comma-dangle": ["warn", "only-multiline"],
+		"guard-for-in": "warn",
+		"indent": ["warn", "tab"],
+		"keyword-spacing": [
+			"warn",
+			{
+				"after": true
+			}
+		],
+		"linebreak-style": ["warn", "unix"],
+		"max-len": [
+			"warn",
+			{
+				"code": 360,
+				"ignoreComments": true
+			}
+		],
+		"no-debugger": "warn",
+		"no-invalid-this": "warn",
+		"no-tabs": [
+			"warn",
+			{
+				"allowIndentationTabs": true
+			}
+		],
+		"no-unused-vars": "warn",
+		"no-var": "warn",
+		"object-curly-spacing": ["warn", "always"],
+		"operator-linebreak": ["warn", "after", { "overrides": { "?": "ignore", ":": "ignore" } }],
+		"quote-props": ["error", "as-needed"],
+		"space-before-function-paren": [
+			"warn",
+			{
+				"anonymous": "always",
+				"named": "never",
+				"asyncArrow": "always"
+			}
+		],
+		"spaced-comment": ["warn", "always"],
+		"valid-jsdoc": [
+			"warn",
+			{
+				"requireReturnDescription": false
+			}
+		]
+	}
+}

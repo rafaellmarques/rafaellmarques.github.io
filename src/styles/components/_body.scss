@@ -1,0 +1,25 @@
+body {
+	font-family: $NotoSans;
+	transition: all ease-in-out 0.3s;
+
+	::before,
+	::after {
+		box-sizing: border-box;
+		height: auto;
+		width: auto;
+	}
+
+	&.block {
+		overflow: hidden;
+
+		&::before {
+			backdrop-filter: blur(16px);
+			background-color: rgba(#959494, 0.5);
+			content: '';
+			height: 100vh;
+			position: fixed;
+			width: 100vw;
+			z-index: 1;
+		}
+	}
+}

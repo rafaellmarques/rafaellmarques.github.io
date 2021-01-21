@@ -1,0 +1,19 @@
+.container {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+
+	&-full {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	@include tablet {
+	}
+
+	@include desktop {
+		max-width: 1200px;
+	}
+}

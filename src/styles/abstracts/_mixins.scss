@@ -1,0 +1,59 @@
+// -------------------------------------
+// Media Queries
+// -------------------------------------
+@mixin desktop {
+	@media screen and (min-device-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (min-device-width: 600px) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media screen and (min-device-width: 300px) {
+		@content;
+	}
+}
+
+// -------------------------------------
+// Media Queries Hacks
+// -------------------------------------
+@mixin safari {
+	@media not all and (min-resolution: 0.001dpcm) {
+		@content;
+	}
+}
+
+@mixin edge {
+	@supports (-ms-ime-align: auto) {
+		@content;
+	}
+}
+
+@mixin ie {
+	@media screen and (min-width: 0\0) and (min-resolution: +72dpi) {
+		@content;
+	}
+}
+
+// -------------------------------------
+// Fontawesome
+// -------------------------------------
+@mixin fa($icon, $color, $size, $weight) {
+	color: $color;
+	content: $icon;
+	font-size: $size;
+	line-height: normal;
+	opacity: 1;
+	@if ($weight != 900) {
+		font-family: $fab;
+		font-weight: 400;
+	} @else {
+		font-family: $fa;
+		font-weight: 900;
+	}
+}
