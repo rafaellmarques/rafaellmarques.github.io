@@ -1,0 +1,5 @@
+{
+    "hints": {
+        "no-protocol-relative-urls": "warn"
+    }
+}
