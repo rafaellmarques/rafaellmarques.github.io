@@ -1578,7 +1578,7 @@ var profile = {
                 document.querySelector('.profile-name').innerHTML = "".concat(data.name);
                 document.querySelector('.profile-bio').innerHTML = "".concat(icoBio, "<span>").concat(data.bio, "</span>");
                 document.querySelector('.profile-location').innerHTML = "".concat(icoLocation, "<span>").concat(data.location, "</span>");
-                data.twitter_username ? document.querySelector('#twitter a').setAttribute('href', "//twitter.com/".concat(data.twitter_username)) : _modules_utilities__WEBPACK_IMPORTED_MODULE_3__["default"].remove(document.querySelector('#twitter'));
+                data.twitter_username ? document.querySelector('#twitter a').setAttribute('href', "https://twitter.com/".concat(data.twitter_username)) : _modules_utilities__WEBPACK_IMPORTED_MODULE_3__["default"].remove(document.querySelector('#twitter'));
               }).catch(function (error) {
                 return console.error(error);
               });

@@ -59,7 +59,7 @@ const profile = {
 				document.querySelector('.profile-name').innerHTML = `${data.name}`;
 				document.querySelector('.profile-bio').innerHTML = `${icoBio}<span>${data.bio}</span>`;
 				document.querySelector('.profile-location').innerHTML = `${icoLocation}<span>${data.location}</span>`;
-				data.twitter_username ? document.querySelector('#twitter a').setAttribute('href', `//twitter.com/${data.twitter_username}`) : utilities.remove(document.querySelector('#twitter'));
+				data.twitter_username ? document.querySelector('#twitter a').setAttribute('href', `https://twitter.com/${data.twitter_username}`) : utilities.remove(document.querySelector('#twitter'));
 			})
 			.catch((error) => console.error(error));
 	},
