@@ -57,3 +57,17 @@
 		font-weight: 900;
 	}
 }
+
+// -------------------------------------
+// Media Queries
+// -------------------------------------
+@mixin skeleton($name, $duration, $timingFunction, $delay, $iterationCount) {
+	animation-name: $name;
+	animation-duration: $duration; //time
+	animation-timing-function: $timingFunction;
+	animation-delay: $delay; //time
+	animation-iteration-count: $iterationCount;
+	animation-direction: normal;
+	animation-fill-mode: none;
+	animation-play-state: running;
+}

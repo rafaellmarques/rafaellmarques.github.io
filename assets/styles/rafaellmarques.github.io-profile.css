@@ -1,2 +1,194 @@
+[data-page='profile'] {
+  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, lightblue));
+  background-image: linear-gradient(to right, white 0%, lightblue 50%);
+  height: 100vh;
+  width: 100vw; }
+
+.profile {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: nowrap row;
+  flex-flow: nowrap row;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%; }
+  .profile-card {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    max-height: 90vh;
+    max-width: calc(100% / 4);
+    min-width: 280px;
+    overflow: scroll;
+    -webkit-transform: perspective(1000px);
+    transform: perspective(1000px);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+  .profile-header, .profile-body, .profile-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0.5rem; }
+  .profile-header {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .profile-avatar {
+    border-radius: 50%;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    max-width: 100%;
+    min-height: 100px;
+    min-width: 100px;
+    -webkit-transform: translateZ(20px);
+    transform: translateZ(20px); }
+  .profile-image {
+    -webkit-filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+    margin: 0 auto;
+    max-width: 200px;
+    width: 100%; }
+  .profile-description {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin: 0 1rem;
+    max-height: 100%;
+    max-width: 100%; }
+    .profile-description h1,
+    .profile-description p {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      margin: 5px auto;
+      text-align: center;
+      width: 100%; }
+    .profile-description span {
+      width: auto; }
+      .profile-description span:empty {
+        border-radius: 25px;
+        min-height: 1rem; }
+    .profile-description svg {
+      margin-right: 0.5rem;
+      max-height: 20px; }
+  .profile-name {
+    font-size: 1.125rem; }
+  .profile-bio {
+    font-size: 1rem; }
+  .profile-location {
+    font-size: 1rem; }
+  .profile hr {
+    border: none;
+    height: 0;
+    margin: 0.5rem; }
+    .profile hr::before {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      content: '';
+      display: block;
+      width: 100%; }
+  .profile-about {
+    margin: 0 1rem; }
+    .profile-about p {
+      margin: 5px auto; }
+  .profile-social-list {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .profile-social-item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+    -webkit-transform: translateZ(20px);
+    transform: translateZ(20px); }
+    .profile-social-item a {
+      display: block; }
+    .profile-social-item svg {
+      max-height: 40px;
+      text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
+    .profile-social-item#linkedin:hover svg {
+      fill: #0a66c2; }
+    .profile-social-item#twitter:hover svg {
+      fill: #1da1f2; }
+  .profile-avatar, .profile-name, .profile-bio, .profile-location {
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s; }
+    .profile-avatar:empty, .profile-name:empty, .profile-bio:empty, .profile-location:empty {
+      background-color: #656871; }
+      .profile-avatar:empty:before, .profile-name:empty:before, .profile-bio:empty:before, .profile-location:empty:before {
+        -webkit-animation: shimmer 1s linear infinite;
+        animation: shimmer 1s linear infinite;
+        background-image: -webkit-gradient(linear, left top, right top, from(#656871), color-stop(20%, #888b94), color-stop(40%, #656871), to(#656871));
+        background-image: linear-gradient(to right, #656871 0%, #888b94 20%, #656871 40%, #656871 100%);
+        background-repeat: no-repeat;
+        background-size: 450px 400px;
+        content: '';
+        height: 100%;
+        position: absolute;
+        width: 100%; }
+  @media screen and (min-device-width: 600px) {
+    .profile-card {
+      height: auto; } }
+
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: -450px 0; }
+  100% {
+    background-position: 450px 0; } }
+
+@keyframes shimmer {
+  0% {
+    background-position: -450px 0; }
+  100% {
+    background-position: 450px 0; } }
 
 /*# sourceMappingURL=rafaellmarques.github.io-profile.css.map */
