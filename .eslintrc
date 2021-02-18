@@ -8,7 +8,11 @@
 		"jquery": true,
 		"node": true
 	},
-	"extends": ["eslint:recommended", "plugin:react/recommended", "google"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"google"
+	],
 	"globals": {
 		"$": true,
 		"_": true,
@@ -25,7 +29,10 @@
 		"ecmaVersion": 6,
 		"sourceType": "module"
 	},
-	"plugins": ["react", "@typescript-eslint"],
+	"plugins": [
+		"react",
+		"@typescript-eslint"
+	],
 	"require-jsdoc": [
 		"warn",
 		{
@@ -47,16 +54,25 @@
 				"ignoreDestructuring": false
 			}
 		],
-		"comma-dangle": ["warn", "only-multiline"],
+		"comma-dangle": [
+			"warn",
+			"only-multiline"
+		],
 		"guard-for-in": "warn",
-		"indent": ["warn", "tab"],
+		"indent": [
+			"warn",
+			"tab"
+		],
 		"keyword-spacing": [
 			"warn",
 			{
 				"after": true
 			}
 		],
-		"linebreak-style": ["warn", "unix"],
+		"linebreak-style": [
+			"warn",
+			"unix"
+		],
 		"max-len": [
 			"warn",
 			{
@@ -74,9 +90,24 @@
 		],
 		"no-unused-vars": "warn",
 		"no-var": "warn",
-		"object-curly-spacing": ["warn", "always"],
-		"operator-linebreak": ["warn", "after", { "overrides": { "?": "ignore", ":": "ignore" } }],
-		"quote-props": ["error", "as-needed"],
+		"object-curly-spacing": [
+			"warn",
+			"always"
+		],
+		"operator-linebreak": [
+			"warn",
+			"after",
+			{
+				"overrides": {
+					"?": "ignore",
+					":": "ignore"
+				}
+			}
+		],
+		"quote-props": [
+			"error",
+			"as-needed"
+		],
 		"space-before-function-paren": [
 			"warn",
 			{
@@ -85,7 +116,10 @@
 				"asyncArrow": "always"
 			}
 		],
-		"spaced-comment": ["warn", "always"],
+		"spaced-comment": [
+			"warn",
+			"always"
+		],
 		"valid-jsdoc": [
 			"warn",
 			{

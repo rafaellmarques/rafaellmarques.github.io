@@ -1,7 +1,7 @@
 @import url(../../../node_modules/simplebar/dist/simplebar.css);
 [data-page='profile'] {
-  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, lightblue));
-  background-image: linear-gradient(to right, white 0%, lightblue 50%);
+  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, lightblue), to(lightblue));
+  background-image: linear-gradient(to right, white 0%, lightblue 50%, lightblue 100%);
   height: 100vh;
   width: 100vw; }
 
@@ -12,10 +12,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: nowrap row;
-  flex-flow: nowrap row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   height: 100vh;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -66,8 +64,6 @@
     -webkit-transform: translateZ(20px);
     transform: translateZ(20px); }
   .profile-image {
-    -webkit-filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
-    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
     margin: 0 auto;
     max-width: 200px;
     width: 100%; }
@@ -80,8 +76,10 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-flow: column nowrap;
-    flex-flow: column nowrap;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -129,7 +127,8 @@
       display: block;
       width: 100%; }
   .profile-about {
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    max-height: 25vh; }
     .profile-about p {
       margin: 5px auto; }
   .profile-social-list {
@@ -150,8 +149,7 @@
     .profile-social-item a {
       display: block; }
     .profile-social-item svg {
-      height: 40px;
-      text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
+      height: 40px; }
     .profile-social-item#linkedin:hover svg {
       fill: #0a66c2; }
     .profile-social-item#twitter:hover svg {

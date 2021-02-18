@@ -1,7 +1,7 @@
 # Browsers that we support
 
-> 0.5%
+> 1%
 last 2 version
 Firefox ESR
 not dead
-IE <= 10 # sorry
+not IE <= 11
